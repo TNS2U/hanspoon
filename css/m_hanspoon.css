@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+
+
+.inner {
+    padding: 0 5%;
+}
+header {box-shadow: none;}
+    header .inner {padding: 0 3%; box-sizing: border-box;}
+    header .logo {
+        position: static;
+        transform: none;
+    }
+    header .logo > a {
+        font-size: 28px;
+        line-height: 80px;
+        text-align: center;
+        display: block;
+    }
+    header .btn_search {right: 3%;}
+    header .btn_menu {
+        display: block;
+        position: absolute;
+        top: 50%; left: 3%;
+        transform: translateY(-50%);
+        font-size: 34px;
+        color: #000;
+    }
+
+    /* gnb_area */
+    .gnb_area {
+        width: 100%; 
+        height: calc(100vh - 80px);
+        position: absolute;
+        left: 0; top: 80px;
+        background: #fff;
+        display: none;
+    }
+    .gnb_area > ul {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .gnb_area > ul li {
+        width: 50vw;
+    }
+    .gnb_area > ul > li > a {
+        line-height: 90px;
+        height: 90px;
+        position: relative;
+        font-size: 22px;
+        padding-left: 20px;
+        text-align: center;
+        border-bottom: 1px solid #cdcdcd;
+    }
+    .gnb_area > ul > li > a:before {
+        content: '';
+        position: absolute;
+        top: 28px; left: 30%;
+        width: 5px;
+        height: 30px;
+        background: #7e1212;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .gnb_area > ul > li > a:hover:before {
+        opacity: 1;
+    }
+
+    .main_title {padding: 25px;}
+    .main_bg .main_title strong {font-size: 30px;}
+    .main_bg .main_title > p {font-size: 40px;}
+
+    .best_list > li {
+        width: 46%;
+        height: 440px;
+        margin-bottom: 4%;
+    }
+    .best_list > li figure {
+        height: 160px;
+    }
+    .best_list > li .btn_view {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .review_list {flex-wrap: wrap;}
+    .review_list > li {width: 30%; margin-bottom: 4%;}
+    .review_list > li:last-child {display: none;}
